@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Order;
+use App\Models\Wishlist;
 use Illuminate\Http\Request;
 use App\Models\Customer;
 use Session;
@@ -21,6 +22,25 @@ class CustomerAuthController extends Controller
         $this->customer = Customer::newCustomer($request);
         Session::put('id',$this->customer->id);
         Session::put('name',$this->customer->name) ;
+       // return Session::get('id');
+        //return Session::get('product_id');
+
+        $productId = Session::get('product_id');
+        $customerId = Session::get('id');
+        if($productId){
+            $existsCustomer = Wishlist::where('customer_id', $customerId)->where('product_id', $productId)->first();
+
+            //return $existsCustomer;
+
+            if(!$existsCustomer){
+                Wishlist::newWishlist($productId,$customerId); //save customer id &  product id;
+                return redirect()->route('customer.wishlist')->with('success',"Product added your wishlist");
+            }
+        }
+
+
+
+
         return redirect('/customer-dashboard');
 
     }

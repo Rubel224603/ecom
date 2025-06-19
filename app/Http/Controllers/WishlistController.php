@@ -28,7 +28,7 @@ class WishlistController extends Controller
 
         //return $existsCustomer;
          if(!$existsCustomer){
-             Wishlist::newWishlist($productId,$customerId);
+             Wishlist::newWishlist($productId,$customerId); //save customer id &  product id;
              return redirect()->route('customer.wishlist')->with('success',"Product added your wishlist");
          }else{
              return redirect()->route('customer.wishlist')->with('alreadyAdded',"Product already  added your wishlist");
