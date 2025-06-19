@@ -89,6 +89,7 @@ class CheckOutController extends Controller
         Session::forget('id');
         Session::forget('name');
         Session::forget('image');
+        Session::forget('product_id');
 
        return redirect('/');
     }

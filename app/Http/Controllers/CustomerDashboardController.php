@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Customer;
 use App\Models\Order;
+use App\Models\Wishlist;
 use Illuminate\Http\Request;
 Use Session;
 
@@ -21,7 +22,7 @@ class CustomerDashboardController extends Controller
     return view('customer.order.index', ['orders' => Order::where('customer_id', Session::get('id'))->latest()->get()]);
     }
     public function wishlist(){
-        return view('customer.wishlist.index');
+        return view('customer.wishlist.index',['wishLists'=>Wishlist::where('customer_id',Session::get('id'))->latest()->get()]);
     }
     public function changePassword(){
         //$customer = Customer::where('id',Session::get('id'))->get();

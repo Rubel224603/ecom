@@ -18,6 +18,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\CustomerDashboardController;
 use App\Http\Controllers\CustomerAuthController;
 use App\Http\Controllers\CouponController;
+use App\Http\Controllers\WishlistController;
 
 
 
@@ -40,8 +41,9 @@ Route::post('/cart/update',[CartController::class,'updateCart'])->name('cart.upd
 Route::get('/cart/remove/{rowId}',[CartController::class,'productRemove'])->name('cart.remove');
 Route::post('/cart/add/{id}',[CartController::class,'addToCard'])->name('cart-add');
 Route::get('/cart-direct/add/{id}',[CartController::class,'directAddToCart'])->name('direct-card-add');
-//coupon for website;
-//Route::get('/cart/index',[CartController::class,'coupon'])->name('cart-index');
+//wishlist;
+
+
 
 
 Route::get('/checkout/index',[CheckOutController::class,'index'])->name('checkout-index');
@@ -54,6 +56,7 @@ Route::get('/customer-login/register',[CustomerAuthController::class,'index'])->
 Route::post('/customer-register',[CustomerAuthController::class,'register'])->name('customer.register');
 Route::post('/customer-login',[CustomerAuthController::class,'loginCheck'])->name('customer.login');
 
+Route::get('/add-wishlist/{id}',[WishlistController::class,'addWishlist'])->name('add-wishlist');
 
 Route::middleware(['customer'])->group(function () {
 
@@ -65,6 +68,8 @@ Route::middleware(['customer'])->group(function () {
     Route::get('/customer/wishlist',[CustomerDashboardController::class,'wishlist'])->name('customer.wishlist');
     Route::get('/customer/changePassword',[CustomerDashboardController::class,'changePassword'])->name('customer.changePassword');
     Route::post('/customer/password-update/{id}',[CustomerDashboardController::class,'updatePassword'])->name('customer.password-update');
+   // Route::get('/add-wishlist/{id}',[WishlistController::class,'addWishlist'])->name('add-wishlist');
+
 
 });
 

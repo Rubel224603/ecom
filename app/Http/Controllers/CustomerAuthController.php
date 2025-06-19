@@ -36,15 +36,20 @@ class CustomerAuthController extends Controller
              Session::put('name',$this->customer->name);
              Session::put('image', $this->customer->image);
 
-
+              if(Session::get('product_id')){
+                  return Session::get('product_id');
+                 return redirect()->route('customer.wishlist');
+              }
+             //return Session::get('product_id');
 
           }else{
 
               return back()->with('message','Invalid password');
           }
       }else{
-          return back()->with('message','Invalid Email Address');
+              return back()->with('message','Invalid Email Address');
       }
+
 
       return redirect('/customer-dashboard');
 
