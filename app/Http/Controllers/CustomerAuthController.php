@@ -37,10 +37,9 @@ class CustomerAuthController extends Controller
              Session::put('image', $this->customer->image);
 
               if(Session::get('product_id')){
-                  return Session::get('product_id');
+                  //return Session::get('product_id');
                  return redirect()->route('customer.wishlist');
-              }
-             //return Session::get('product_id');
+              }             //return Session::get('product_id');
 
           }else{
 

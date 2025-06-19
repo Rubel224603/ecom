@@ -37,4 +37,9 @@ class WishlistController extends Controller
 
 
     }
+    public function delete($wishListProductId){
+        //$wishListProduct = Wishlist::find($wishListProductId);
+        Wishlist::deleteWishlist($wishListProductId);
+        return back()->with('message','WishList Product Item Deleted Successfully');
+     }
 }

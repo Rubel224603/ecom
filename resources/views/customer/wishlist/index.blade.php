@@ -1,4 +1,4 @@
-@extends('website.master');
+@extends('website.master')
 @section('body')
     <div class="container my-5">
         <div class="row my-5">
@@ -13,6 +13,7 @@
                        <h1>Wishlist</h1>
                        <p class="text-primary text-center">{{session('success')}}</p>
                        <p class="text-primary text-center">{{session('alreadyAdded')}}</p>
+                       <p class="text-primary text-center">{{session('message')}}</p>
 
                    </div>
                     <div class="card-body">
@@ -33,7 +34,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-1">
-                                        <a href=""> <img src="{{asset('/')}}website/delete.png" alt="" style="margin-top:70px !important; margin-left:-157px!important;"></a>
+                                        <a href="{{route('wishlist.delete',['id'=>$wishListItem->id])}}"> <img src="{{asset('/')}}website/delete.png" alt="" style="margin-top:70px !important; margin-left:-157px!important;"></a>
 
 
                                     </div>

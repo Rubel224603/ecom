@@ -16,4 +16,9 @@ class Wishlist extends Model
     public function product(){
         return $this->belongsTo(Product::class);
     }
+
+    public static function deleteWishlist($wishListId){
+        $wishList = Wishlist::find($wishListId);
+        $wishList->delete();
+    }
 }

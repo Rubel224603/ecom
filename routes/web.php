@@ -66,6 +66,7 @@ Route::middleware(['customer'])->group(function () {
     Route::post('/customer/profile-update/{id}',[CustomerDashboardController::class,'updateCustomerProfile'])->name('customer.update');
     Route::get('/customer/order',[CustomerDashboardController::class,'order'])->name('customer.order');
     Route::get('/customer/wishlist',[CustomerDashboardController::class,'wishlist'])->name('customer.wishlist');
+    Route::get('/customer/wishlist-delete/{id}',[WishlistController::class,'delete'])->name('wishlist.delete');
     Route::get('/customer/changePassword',[CustomerDashboardController::class,'changePassword'])->name('customer.changePassword');
     Route::post('/customer/password-update/{id}',[CustomerDashboardController::class,'updatePassword'])->name('customer.password-update');
    // Route::get('/add-wishlist/{id}',[WishlistController::class,'addWishlist'])->name('add-wishlist');

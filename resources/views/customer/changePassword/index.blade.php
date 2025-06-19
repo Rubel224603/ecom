@@ -1,4 +1,4 @@
-@extends('website.master');
+@extends('website.master')
 @section('body')
     <div class="container my-5">
         <div class="row my-5">
