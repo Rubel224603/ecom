@@ -19,13 +19,16 @@ use App\Http\Controllers\CustomerDashboardController;
 use App\Http\Controllers\CustomerAuthController;
 use App\Http\Controllers\CouponController;
 use App\Http\Controllers\WishlistController;
-
+use App\Http\Controllers\Mail\MailController;
 
 
 //Route::get('/',function (){
 //    return 'hi';
 //});
 Route::get('/', [WelcomeController::class,'index'])->name('home.index');
+Route::post('/send-email',[MailController::class,'sendEmail'])->name('send.email');
+Route::view('/send-email','mail.sendmail');
+
 
 Route::get('/terms-condition',[WelcomeController::class,'termsCondition'])->name('terms&condition');
 Route::get('/return-policy',[WelcomeController::class,'returnPolicy'])->name('returnPolicy');
