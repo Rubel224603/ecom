@@ -55,7 +55,7 @@ Route::get('/checkout/billing-info',[CheckOutController::class,'billingInfo'])->
 Route::get('/customer-login/register',[CustomerAuthController::class,'index'])->name('customer.login-register');
 Route::post('/customer-register',[CustomerAuthController::class,'register'])->name('customer.register');
 Route::post('/customer-login',[CustomerAuthController::class,'loginCheck'])->name('customer.login');
-
+Route::get('/customer-wishlist/register-login',[WishlistController::class,'index'])->name('customer.wishlist.login-register');
 Route::get('/add-wishlist/{id}',[WishlistController::class,'addWishlist'])->name('add-wishlist');
 
 Route::middleware(['customer'])->group(function () {

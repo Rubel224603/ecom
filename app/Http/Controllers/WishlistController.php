@@ -9,6 +9,9 @@ use Session;
 
 class WishlistController extends Controller
 {
+    public function index(){
+        return view('website.wishlist.index');
+    }
     public function addWishlist($productId){
          $product  = Product::find($productId);
          //return $product;
@@ -20,7 +23,7 @@ class WishlistController extends Controller
 
         if (!Session::has('id')) {      //id means customer id
 
-              return redirect()->route('customer.login-register');
+              return redirect()->route('customer.wishlist.login-register');
           }
         $customerId  = Session::get('id');
           //return $customerId;

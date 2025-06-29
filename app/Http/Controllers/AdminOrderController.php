@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class AdminOrderController extends Controller
 {
     public function index(){
-        return view('backend.order.index',['orders'=>Order::latest()->get()]);
+        return view('backend.order.index',['orders'=>Order::orderBy('id','desc')->paginate(15)]);
     }
 
     public function detail($id){

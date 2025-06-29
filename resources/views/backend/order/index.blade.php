@@ -14,17 +14,20 @@
                     <th>Order Date</th>
                     <th>Order total</th>
                     <th>Order Status</th>
+                    <th>Payment Method</th>
                     <th class="text-center">Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($orders as $order)
                     <tr>
-                        <td>{{$loop->iteration}}</td>
+                        <td>{{ ($orders->currentPage() - 1) * $orders->perPage() + $loop->iteration }}</td>
+
                         <td><b>Name:{{isset($order->customer->name)? $order->customer->name:''}}</b> <br> <b>Mobile: {{isset($order->customer->mobile) ? $order->customer->mobile:''}}</b></td>
                         <td>{{$order->order_date}}</td>
                         <td>{{$order->order_total}}</td>
                         <td>{{$order->order_status}}</td>
+                        <td>{{$order->payment_method}}</td>
                         <td>
                             <a href="{{route('admin.order-detail',['id'=>$order->id])}}" class="btn btn-info">Detail</a>
                             <a href="{{route('admin.order-edit',['id'=>$order->id])}}" class="btn btn-success">Edit</a>
@@ -35,7 +38,24 @@
                     </tr>
                 @endforeach
                 </tbody>
+
             </table>
+             <div class="d-flex justify-content-between" style="margin-top: 20px; margin-bottom: 20px !important;">
+                 @if ($orders->onFirstPage())
+                        <span class="ms-5 text-muted">Previous</span>
+                    @else
+                        <a href="{{ $orders->previousPageUrl() }}" class=" ms-5">Previous</a>
+                 @endif
+                 @if ($orders->hasMorePages())
+                        <a href="{{ $orders->nextPageUrl() }}"  class="me-5">Next</a>
+                     @else
+                         <span class="me-5 text-muted">Next</span>
+                 @endif
+
+                 
+
+             </div>
+
         </div>
     </div>
     <!-- Modal to add new record -->
