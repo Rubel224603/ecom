@@ -6,6 +6,8 @@ use App\Models\Order;
 use App\Models\OrderDetail;
 use PDF;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\WelcomeEmail;
 
 class AdminOrderController extends Controller
 {
@@ -26,7 +28,7 @@ class AdminOrderController extends Controller
         //return $request;
         $this->order = Order::find($id);
 
-        //return $this->order;
+       // return $this->order;
 
         if( $request->order_status == 'Pending'){
             $this->order->delivery_address      = $request->delivery_address;
@@ -48,6 +50,15 @@ class AdminOrderController extends Controller
             $this->order->payment_amount        = $this->order->order_total;
             $this->order->payment_date          = date('Y-d-m');
             $this->order->payment_timestamp     = strtotime(date('Y-d-m'));
+
+            $msg = "Confirmd Your Order....";
+            $subject ="Confirmd Your Order ";
+            $orderId = $this->order->id;
+            //return $orderId;
+
+            $customerName = $this->order->customer->email;
+            //return $customerName;
+            Mail::to($customerName)->send(new WelcomeEmail($this->order,$msg,$subject));
 
         }elseif($request->order_status =='Cancel'){
             $this->order->order_status          = $request->order_status;

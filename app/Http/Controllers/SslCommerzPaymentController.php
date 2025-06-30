@@ -28,11 +28,8 @@ class SslCommerzPaymentController extends Controller
         # Here you have to receive all the order data to initiate the payment.
         # Let's say, your oder transaction information are saving in a table called "orders"
         # In "orders" table, order unique identity is "transaction_id". "status" field contain status of the transaction, "amount" is the order amount to be paid and "currency" is for storing Site Currency which will be checked with paid currency.
-
-
         //dd(url('/success'));
         //check kora jate url thikmoto kaj korce ki na dekha
-
         $post_data = array();
         $post_data['total_amount'] = Session::get('order_total'); # You cant not pay less than 10
         $post_data['currency'] = "BDT";
@@ -86,10 +83,9 @@ class SslCommerzPaymentController extends Controller
                 'transaction_id'    => $post_data['tran_id'],
                 'currency'          => $post_data['currency']
             ]);
-
         //OrderDetail::newOrderDetail(Order::latest()->first()->id);
         $orderId= Order::orderBy('id','desc')->first()->id;
-        OrderDetail::newOrderDetail($orderId); //87 line & 85 are same
+        OrderDetail::newOrderDetail($orderId); //88 line & 86 are same
 
         $sslc = new SslCommerzNotification();
         # initiate(Transaction Data , false: Redirect to SSLCOMMERZ gateway/ true: Show all the Payment gateway here )

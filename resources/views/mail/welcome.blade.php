@@ -9,5 +9,6 @@
 </head>
 <body>
     {{$msg}}
+    {{$order}}
 </body>
 </html>

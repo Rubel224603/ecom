@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\Order;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -16,10 +17,11 @@ class WelcomeEmail extends Mailable
     /**
      * Create a new message instance.
      */
-    public  $msg,$subject;
-    public function __construct($msg,$subject)
+    public $order, $msg,$subject;
+    public function __construct($order,$msg,$subject)
     {
         //
+        $this->order= $order;
         $this->msg= $msg;
         $this->subject=$subject;
 
@@ -41,7 +43,11 @@ class WelcomeEmail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail.welcome',
+            view: 'backend.order.invoice-print',
+                with:[
+                    'msg'=>$this->msg,
+                    'order'=> $this->order,
+                ],
 
         );
     }
