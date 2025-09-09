@@ -58,7 +58,7 @@ class Brand extends Model
         self::$brand->delete();
     }
     public function products(){
-        return $this->hasMany(Product::class);
+        return $this->hasMany(Product::class,'brand_id','id');
     }
 
 

@@ -13,6 +13,7 @@
                     <th>Sl</th>
                     <th>Name</th>
                     <th>Image</th>
+                    <th>Brand</th>
                     <th>Status</th>
                     <th>Action </th>
 
@@ -26,6 +27,9 @@
 
                         <td>{{$product->name}}</td>
                         <td><img src="{{asset($product->image)}}" alt="" height="100px"></td>
+
+                        <td>{{$product->brand?->name ?? ''}}</td>
+
                          <td>{{$product->status ==1 ? "Published" :'Unpublished'}}</td>
 
                         <td>

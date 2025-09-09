@@ -401,7 +401,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>n
+                            </div>
                             <!-- End Single Product  -->
 
 
@@ -584,31 +584,37 @@
             </ul>
 
             <!-- Tab Content for Categories -->
-{{--            <div class="tab-content mt-3" id="categoryTabsContent">--}}
-{{--                @foreach($brands as $brandKey1 => $brand)--}}
+            <div class="tab-content mt-3" id="categoryTabsContent">
 
-{{--                    <div class="tab-pane fade show {{ $brandKey1 == 0 ? 'active' : '' }}" id="category-{{ $brandKey1 }}" role="tabpanel" aria-labelledby="category-tab-{{ $brandKey1 }}">--}}
-{{--                        <div class="row">--}}
-{{--                            @foreach($brands->products as $brandProduct)--}}
-{{--                                <div class="col-md-4">--}}
-{{--                                    <div class="card">--}}
-{{--                                        <img src="{{ $brandProduct->image }}" class="card-img-top img-fluid" alt="Product Image">--}}
-{{--                                        <div class="card-body">--}}
-{{--                                            <div class="text-center">--}}
-{{--                                                <a href="{{ route('product-detail', ['id' => $brandProduct->id]) }}" class="text-capitalize">{{ $brand->name }}</a>--}}
-{{--                                                <p>{{ $brandProduct->short_description }}</p>--}}
-{{--                                                <a href="{{ route('product-detail', ['id' => $brandProduct->id]) }}" class="btn btn-success btn-lg mb-5">Product Details</a>--}}
-{{--                                                <p>Price: BDT {{ $brandProduct->product_price }}</p>--}}
-{{--                                                <p>Discounted Price: BDT {{ $brandProduct->selling_price }}</p>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                              </div>--}}
-{{--                            @endforeach--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                @endforeach--}}
-{{--            </div>--}}
-{{--        </div>--}}
+                @foreach($brands as $brandKey1 => $brand)
+
+                    <div class="tab-pane fade show {{ $brandKey1 == 0 ? 'active' : '' }}" id="category-{{ $brandKey1 }}" role="tabpanel" aria-labelledby="category-tab-{{ $brandKey1 }}">
+                        <div class="row">
+                            @foreach($brand->products as $brandProduct)
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="{{ $brandProduct->image }}" class="card-img-top img-fluid"  alt="Product Image" style="height: 250px !important;">
+                                        <br>
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <a href="{{ route('product-detail', ['id' => $brandProduct->id]) }}" class="text-capitalize">{{ $brand->name }}</a>
+                                                <p>{{ $brandProduct->short_description }}</p>
+                                                <a href="{{ route('product-detail', ['id' => $brandProduct->id]) }}" class="btn btn-success btn-lg mb-5">Product Details</a>
+                                                <p>Price: BDT {{ $brandProduct->product_price }}</p>
+                                                <p>Discounted Price: BDT {{ $brandProduct->selling_price }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                            @endforeach
+
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
         <!-- End Categories & Products Section -->
 
 
