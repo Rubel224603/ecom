@@ -21,7 +21,7 @@ return Application::configure(basePath: dirname(__DIR__))
                 '/pay-via-ajax',
             ]);
             $middleware->alias([
-                'customer' => CustomerMiddleware::class
+                'customer' => CustomerMiddleware::class,
             ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

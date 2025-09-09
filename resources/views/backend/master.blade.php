@@ -859,8 +859,8 @@
 
                     });
 
-                    $('#subCategory').empty();
-                    $('#subCategory').append(option);
+                    $('#subcategory').empty();
+                    $('#subcategory').append(option);
 
             }
         });

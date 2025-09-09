@@ -144,6 +144,7 @@
     </div>
     <!-- End Header Top Area  -->
 
+
     <!-- Start Mainmenu Area  -->
     @if(\Request::route()->getName() == 'home.index')
         <div class="axil-mainmenu aside-category-menu">

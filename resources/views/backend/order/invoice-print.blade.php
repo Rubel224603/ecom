@@ -200,7 +200,7 @@
         <tr class="total">
             <td colspan="3"></td>
 
-            <td>Total Payable BDT: {{$sum+$order->tax_total+$order->shipping_total}}</td>
+            <td>Total Payable BDT: {{$sum+$order->tax_total + $order->shipping_total}}</td>
         </tr>
     </table>
 </div>

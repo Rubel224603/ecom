@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Models\Category;
+use  App\Models\Category;
 use Illuminate\Support\ServiceProvider;
 use View;
 

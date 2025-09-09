@@ -38,12 +38,13 @@
                             <label class="col-sm-2 col-form-label" for="basic-default-name">Add Sub-Category </label>
                             <div class="col-sm-10">
 
-                                <select id="subCategory" name="sub_category_id" class="form-control">
+                                <select id="subcategory" name="sub_category_id" class="form-control">
                                     <option value="">-----select Sub Category----</option>
                                    @foreach($subcategories as $subCategory)
                                         <option value="{{$subCategory->id}}">{{$subCategory->name}}</option>
                                     @endforeach
                                 </select>
+
                             </div>
 
                         </div>

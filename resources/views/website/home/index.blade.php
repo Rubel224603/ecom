@@ -248,7 +248,8 @@
 
                 @foreach($categories as $key1=>$category)
 
-                <div class="tab-pane fade show {{$key1== 0? 'active':''}}" id="electronics{{$key1}}" role="tabpanel" aria-labelledby="electronics-tab">
+
+                    <div class="tab-pane fade show {{$key1== 0? 'active':''}}" id="electronics{{$key1}}" role="tabpanel" aria-labelledby="electronics-tab">
                     <div class="row">
                         @foreach($category->products as $product)
                             <div class="col-md-4">
@@ -271,7 +272,7 @@
 
 
                     </div>
-                </div>
+                    </div>
 
                 @endforeach
             </div>
