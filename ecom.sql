@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 18, 2025 at 02:22 PM
+-- Generation Time: Mar 08, 2026 at 08:54 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -63,8 +63,28 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('501e283b1cb0dffcdae8944c11969679', 'i:1;', 1750248328),
-('501e283b1cb0dffcdae8944c11969679:timer', 'i:1750248328;', 1750248328);
+('11201fc76455855c802f582090bb9236', 'i:4;', 1752166074),
+('11201fc76455855c802f582090bb9236:timer', 'i:1752166074;', 1752166074),
+('501e283b1cb0dffcdae8944c11969679', 'i:4;', 1772956211),
+('501e283b1cb0dffcdae8944c11969679:timer', 'i:1772956211;', 1772956211),
+('6575dab0001181c5d88f5dac6a05781e', 'i:1;', 1752166165),
+('6575dab0001181c5d88f5dac6a05781e:timer', 'i:1752166165;', 1752166165),
+('723b5582a0df0098a91b784c1b67a696', 'i:1;', 1761972844),
+('723b5582a0df0098a91b784c1b67a696:timer', 'i:1761972844;', 1761972844),
+('b4d079f4b29126db3f5fd5bc7e1a8f98', 'i:1;', 1760565391),
+('b4d079f4b29126db3f5fd5bc7e1a8f98:timer', 'i:1760565391;', 1760565391),
+('bf73b69fab298aa6f6fe855d02773c43', 'i:1;', 1759826183),
+('bf73b69fab298aa6f6fe855d02773c43:timer', 'i:1759826183;', 1759826183),
+('c525a5357e97fef8d3db25841c86da1a', 'i:1;', 1772955809),
+('c525a5357e97fef8d3db25841c86da1a:timer', 'i:1772955809;', 1772955809),
+('cserubelhosen@gmial.com|103.86.198.126', 'i:4;', 1752166074),
+('cserubelhosen@gmial.com|103.86.198.126:timer', 'i:1752166074;', 1752166074),
+('d5c479fdc38dabc3d943cd6ccf81c901', 'i:1;', 1750843678),
+('d5c479fdc38dabc3d943cd6ccf81c901:timer', 'i:1750843678;', 1750843678),
+('j03jdcp7@gmail.com|128.199.198.195', 'i:1;', 1759826183),
+('j03jdcp7@gmail.com|128.199.198.195:timer', 'i:1759826183;', 1759826183),
+('zigzy2s8@gmail.com|128.199.79.13', 'i:1;', 1760565391),
+('zigzy2s8@gmail.com|128.199.79.13:timer', 'i:1760565391;', 1760565391);
 
 -- --------------------------------------------------------
 
@@ -100,9 +120,9 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `status`, `image`, `description`, `created_at`, `updated_at`, `home_status`) VALUES
-(1, 'Man Fashon', 1, 'upload/category-images/Men_s-T-shirt-Crewneck-Half-Slv-Front-Khaki-Basic-600x600-1-300x300.jpg', 'fcghjknlm', '2025-01-19 05:36:14', '2025-01-19 05:36:14', 0),
+(1, 'Man Fashon', 1, 'upload/category-images/Men_s-T-shirt-Crewneck-Half-Slv-Front-Khaki-Basic-600x600-1-300x300.jpg', 'kk', '2025-01-19 05:36:14', '2026-03-08 01:54:21', 0),
 (2, 'Women Fashion', 1, 'upload/category-images/CSF-3872.jpg', 'xcfhgvhjbnm,', '2025-01-19 05:36:44', '2025-01-19 05:36:44', 0),
-(3, 'Eletronics', 1, 'upload/category-images/sss.jpg', 'fghbjknkm', '2025-01-19 05:37:01', '2025-01-19 05:37:01', 1),
+(3, 'Eletronics', 1, 'upload/category-images/download (3).png', 'fghbjknkm', '2025-01-19 05:37:01', '2026-03-08 01:43:45', 1),
 (4, 'Fruit', 1, 'upload/category-images/images (4).jpg', 'Fruit', '2025-01-19 05:44:15', '2025-01-28 14:51:39', 0),
 (5, 'Software', 1, 'upload/category-images/6257867ld.avif', 'Software is most valuable', '2025-01-19 05:47:29', '2025-01-19 05:47:29', 0),
 (6, 'House Hold', 1, 'upload/category-images/images (1).jpg', 'chgbhjjn', '2025-01-19 05:49:11', '2025-01-19 05:49:11', 1);
@@ -178,7 +198,6 @@ INSERT INTO `customers` (`id`, `name`, `email`, `mobile`, `password`, `image`, `
 (16, 'House Hold', 'House@gmail.com', '123456', '$2y$12$JdisFvxnjT4wgT00VG0PdO5FXHLxpRLfIdMy.2zP3Htbrt1ebQn7S', 'upload/customer-images/man-cartoon-icon-HTJP85.jpg', NULL, NULL, NULL, '2025-02-15 16:31:45', '2025-06-17 06:30:41'),
 (17, 'Akram khan', 'akram@gmail.com', '123456', '$2y$12$bOLzLC9Z5u6gS/T5qGSmPe/GMFeie2YhMjhJzyyQJCguj33SlTSb2', 'upload/customer-images/R.jfif', NULL, NULL, NULL, '2025-03-07 15:11:04', '2025-06-17 06:31:27'),
 (18, 'akram khan', 'akramkhan@gmail.com', '1234567', '$2y$12$4G1QaCdehvSEHDeoC6kqAuwN2u/Lfvrbe3GN060hkiWo/dTcTcT0i', NULL, NULL, NULL, NULL, '2025-03-09 06:28:23', '2025-03-09 06:28:23'),
-(19, 'Naimur Rahman', 'naimur@gmail.com', '123456', '$2y$12$w6O0ldhAZxDQbZgl9Fm51ODbnuGUABjsB5ghvKsaanH0WhF6vQHKS', 'upload/customer-images/cartoon-illustration-man-suit-tie-looking-directly-viewer_520881-11107.avif', NULL, NULL, NULL, '2025-03-10 14:34:06', '2025-06-17 06:32:16'),
 (20, 'Rubel Hosen Shakib', 'shakil@gmail.com', '12345', '$2y$12$lq7LZPPU5qP82YIPSF5o5e6/ir2HNgv73DqVoeeK0rCfnjwMRpcoS', NULL, NULL, NULL, NULL, '2025-03-11 13:24:43', '2025-03-11 13:24:43'),
 (21, 'ashik', 'ashik@gmail.com', '2345678', '$2y$12$NVjOxQVCxmZs8mZdufzloOuwreLLYS3RJn3Bf3L5n106vQ0e2yBym', NULL, NULL, NULL, NULL, '2025-03-12 05:10:23', '2025-03-12 05:10:23'),
 (22, 'Miraj Hosen', 'mirajhosen@gmail.com', '12345678', '$2y$12$1uaxdPzTfmY.VKi9h/NfxumsiKlaBbc5oJJnrXsl9ThZ64jCUZ/NS', NULL, NULL, NULL, NULL, '2025-03-12 12:21:07', '2025-03-12 12:21:07'),
@@ -187,7 +206,23 @@ INSERT INTO `customers` (`id`, `name`, `email`, `mobile`, `password`, `image`, `
 (25, 'asif', 'asif@gmailcom', '000', '$2y$12$Xsp7upKVdbhXFzJuXtdj4OstUWw/3fER7KJqzV/KufmIebs.4EEDy', NULL, NULL, NULL, NULL, '2025-05-26 00:17:12', '2025-05-26 00:17:12'),
 (26, 'somrat', 'somrat@gmail.com', '1234567', '$2y$12$V7rBJNKUKIsKZz9i9fCtbuNOJvTwcwcyj9l2znaDLawBdmy1j9clO', NULL, NULL, NULL, NULL, '2025-05-27 02:42:14', '2025-06-17 02:47:31'),
 (28, 'arif', 'arif@gmail.com', '0147', '$2y$12$S1DmysVMNsMmvDB5QkWLRuIiUn1fyIGo4TTNsTd//X2.kAp7WOXSy', 'upload/customer-images/business-man-illustration-ai-generated-image_362642-344.avif', NULL, NULL, NULL, '2025-06-17 23:58:43', '2025-06-18 00:04:04'),
-(29, 'Naim', 'naim@gmail.com', '12345678', '$2y$12$qu4E5/dBDG3j.L7rjx8UCuxqhx5gVGt2ij7V/Hkt8/M2cUlKTYtD6', 'upload/customer-images/3.png', 'B+', '1999-06-18', 'Dhaka', '2025-06-18 00:08:36', '2025-06-18 00:27:23');
+(29, 'Naim', 'naim@gmail.com', '12345678', '$2y$12$qu4E5/dBDG3j.L7rjx8UCuxqhx5gVGt2ij7V/Hkt8/M2cUlKTYtD6', 'upload/customer-images/3.png', 'B+', '1999-06-18', 'Dhaka', '2025-06-18 00:08:36', '2025-06-18 00:27:23'),
+(30, 'Limon', 'limon@gmail.com', '01950383541', '$2y$12$Mp737yFiTJs6ESjryjmzxOseeZQC4t6mDBlqMoDQn2unKffkkGyBe', 'upload/customer-images/4.png', NULL, NULL, NULL, '2025-06-18 23:08:15', '2025-06-19 07:18:54'),
+(31, 'Limon', 'limon@gmail.com', '01950383541', '$2y$12$bmXcpTBIWyO9QpVnIdw1hOI1M9v3qnnlIOQmlf3n55cyhFJ.8uxRW', NULL, NULL, NULL, NULL, '2025-06-18 23:09:06', '2025-06-18 23:09:06'),
+(32, 'New', 'new@gmail.com', '23456', '$2y$12$gGoV1O69Ccju/ugLIIatluv8TqOzpH1/Xo1Ljlxs8WUzWgGduw/sm', NULL, NULL, NULL, NULL, '2025-06-19 04:44:21', '2025-06-19 04:44:21'),
+(33, 'Naimur Rahman', 'naimur@gmail.com', '01950383541', '$2y$12$j/QhU7IaDMhof/D5ejwkCukX50zgBfhWhQh5xtbY2uqsWncJP6n82', NULL, NULL, NULL, NULL, '2025-06-19 06:20:59', '2025-06-19 06:20:59'),
+(34, 'Mr Imran', 'imran@gmail.com', '01950383541', '$2y$12$bOBpN.t4GnzS6KSMBoTYGeenFP7nDjjZR2AhruBl8vOr0pDL3LZfa', NULL, NULL, NULL, NULL, '2025-06-19 07:19:58', '2025-06-19 07:19:58'),
+(35, 'roifk', 'rofik@gmial.com', '01950383541', '$2y$12$hX/8O5MPjKfWYa1XsW8aeOlbpucctzsyWgbM893uzFee0Nc9T8zbW', NULL, NULL, NULL, NULL, '2025-06-19 07:20:42', '2025-06-19 07:20:42'),
+(37, 'Ripon mia', 'ripon@gmail.com', '0741852963', '$2y$12$eQ7kyB1vw.a7/V3/qfSKbO4ScxtI7IGJIRQRuyeq3r62I5yD8kicC', NULL, NULL, NULL, NULL, '2025-06-19 07:25:15', '2025-06-19 07:25:15'),
+(38, 'Liton', 'liton@gmail.com', '01950383541', '$2y$12$3I5VEg.bNQEpqlWxSUNgL.O/9/5bjPwHAg/FTNlEO3ghU2E4ZUSlW', NULL, NULL, NULL, NULL, '2025-06-19 07:27:34', '2025-06-19 07:27:34'),
+(39, 'Shipon', 'shipon@gmail.com', '2345678', '$2y$12$fqEDw5riTH0OWvGoTO70EeUvlokJtTXDEAV0wy.OO989A/KaQhwAG', NULL, NULL, NULL, NULL, '2025-06-19 07:28:13', '2025-06-19 07:28:13'),
+(40, 'Ujjol', 'ujjol@gmail.com', '01950383541', '$2y$12$00lPSaZJ8YeYAd.L.yVMyubJj37SUNU4h9yB7jt7xVGu4P8Wn07bq', NULL, NULL, NULL, NULL, '2025-06-19 07:38:37', '2025-06-19 07:38:37'),
+(41, 'Usman', 'usman@gmail.com', '01950383541', '$2y$12$Egm2kFLfvVOmSg0xW6XG7uUvSJK33OB3Dvb5cm0iaNouLM22eYsg6', NULL, NULL, NULL, NULL, '2025-06-19 07:41:12', '2025-06-19 07:41:12'),
+(42, 'Alim', 'alim@gmail.com', '01950383541', '$2y$12$t5TGVOR7FO.Gu3gAGn1Wq.O2lZhvpcDhDUaeI/2nmZyBkgmVva6Z6', NULL, NULL, NULL, NULL, '2025-06-19 07:46:54', '2025-06-19 07:46:54'),
+(43, 'Selim', 'selim@gmail.com', '01950383541', '$2y$12$kjHtpu1v2fpZYBVF0HBRGOPuXnrcY3ZFGXei8ChEnJvMkBqQrxeze', NULL, NULL, NULL, NULL, '2025-06-19 07:47:47', '2025-06-19 07:47:47'),
+(44, 'Selim', 'selim@gmail.com', '123456', '$2y$12$NjkGky3CXDBAo.L8c.sQm.JmSSUFS19Gw.B0r8ziiGp5ffGfnKyo2', NULL, NULL, NULL, NULL, '2025-06-19 07:52:11', '2025-06-19 07:52:11'),
+(45, 'Kolim', 'kolim@gmial.com', '0147', '$2y$12$LsssUhau7l0m4P9dc3BibuWN.OoOe7BuRN.9xtk4kg.bkXnb1D02C', NULL, NULL, NULL, NULL, '2025-06-19 07:53:07', '2025-06-19 07:53:07'),
+(46, 'Ahsan  Habib', 'ahsan@gmail.com', '23454', '$2y$12$oGH3EYw4eiBSIbvr1bB1.O6MF80tdY2o8SUjfDnhhVmkoqfVos36u', 'upload/customer-images/gallary.jpeg', NULL, NULL, NULL, '2025-06-23 05:04:14', '2025-06-23 05:05:14');
 
 -- --------------------------------------------------------
 
@@ -429,7 +464,37 @@ INSERT INTO `orders` (`id`, `customer_id`, `courier_id`, `order_total`, `tax_tot
 (116, 29, 0, 12, 2, 100, '2025-18-06', '0', 'Pending', 'dd', NULL, NULL, 'Pending', 0, 'Cash', NULL, NULL, 'Pending', 'BDT', NULL, NULL, '2025-06-18 00:08:46', '2025-06-18 00:08:46'),
 (117, 11, 0, 180, 27, 100, '2025-18-06', '0', 'Pending', 'dd', NULL, NULL, 'Pending', 0, 'Cash', NULL, NULL, 'Pending', 'BDT', NULL, NULL, '2025-06-18 00:09:27', '2025-06-18 00:09:27'),
 (118, 13, 0, 180, 27, 100, '2025-18-06', '0', 'Pending', 'c', NULL, NULL, 'Pending', 0, 'Cash', NULL, NULL, 'Pending', 'BDT', NULL, NULL, '2025-06-18 00:10:28', '2025-06-18 00:10:28'),
-(119, 13, 0, 350, 53, 100, '2025-06-18', '1750204800', 'Processing', 'Barisahal', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '6852a876ef8dd', NULL, NULL, NULL);
+(119, 13, 0, 350, 53, 100, '2025-06-18', '1750204800', 'Processing', 'Barisahal', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '6852a876ef8dd', NULL, NULL, NULL),
+(120, 11, 0, 2000, 300, 100, '2025-06-24', '1750723200', 'Pending', 'll', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '685a53b24f54f', NULL, NULL, NULL),
+(121, 11, 0, 1000, 150, 100, '2025-06-24', '1750723200', 'Pending', 'hyyy', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '685a5d1dbe350', NULL, NULL, NULL),
+(122, 11, 0, 1000, 150, 100, '2025-06-24', '1750723200', 'Pending', 'ccc', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '685a5f8b03d93', NULL, NULL, NULL),
+(123, 13, 2, 1000, 150, 100, '2025-24-06', '0', 'Processing', 'zz', NULL, NULL, 'Pending', 0, 'Cash', NULL, NULL, 'Pending', 'BDT', NULL, NULL, '2025-06-24 02:29:08', '2025-06-25 03:28:10'),
+(124, 11, 0, 2000, 300, 100, '2025-06-24', '1750723200', 'Pending', 'uu', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '685a63f615459', NULL, NULL, NULL),
+(125, 13, 0, 1000, 150, 100, '2025-06-24', '1750723200', 'Pending', 'tt', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '685a649305bc5', NULL, NULL, NULL),
+(126, 13, 0, 2200, 330, 100, '2025-06-24', '1750723200', 'Pending', 'harinaron pur', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '685a65011c8f3', NULL, NULL, NULL),
+(127, 13, 0, 2200, 330, 100, '2025-06-24', '1750723200', 'Pending', 'kk', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '685a66522efe1', NULL, NULL, NULL),
+(128, 13, 0, 1000, 150, 100, '2025-06-24', '1750723200', 'Pending', 'ttt', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '685a66c736fc7', NULL, NULL, NULL),
+(129, 13, 0, 1000, 150, 100, '2025-06-24', '1750723200', 'Pending', 'rrrrrrrrrrrrrrrrrr', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '685a670c8d398', NULL, NULL, NULL),
+(130, 13, 0, 1000, 150, 100, '2025-06-24', '1750723200', 'Pending', 'yyyyyyyyyyyyyyyyyyyyy', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '685a672476fd8', NULL, NULL, NULL),
+(131, 13, 0, 1000, 150, 100, '2025-06-24', '1750723200', 'Pending', 'mmmmmmmmm', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '685a67616aca2', NULL, NULL, NULL),
+(132, 11, 0, 1199, 180, 100, '2025-06-24', '1750723200', 'Pending', 'ff', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '685ae7ca79f3a', NULL, NULL, NULL),
+(133, 11, 0, 3600, 540, 100, '2025-07-10', '1752105600', 'Pending', 'hhh', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '686fecc44201a', NULL, NULL, NULL),
+(134, 11, 0, 1000, 150, 100, '2025-17-07', '0', 'Pending', 'hhhh', NULL, NULL, 'Pending', 0, 'Cash', NULL, NULL, 'Pending', 'BDT', NULL, NULL, '2025-07-17 00:16:30', '2025-07-17 00:16:30'),
+(135, 11, 0, 2200, 330, 100, '2025-07-17', '1752710400', 'Pending', 'hh', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '6878958e20827', NULL, NULL, NULL),
+(136, 11, 0, 1000, 150, 100, '2025-30-07', '0', 'Pending', 'dfdfdfs', NULL, NULL, 'Pending', 0, 'Cash', NULL, NULL, 'Pending', 'BDT', NULL, NULL, '2025-07-30 06:05:46', '2025-07-30 06:05:46'),
+(137, 28, 0, 1000, 150, 100, '2025-09-09', '1757376000', 'Pending', 'Jhenaidah', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '68bff874cf53b', NULL, NULL, NULL),
+(138, 28, 0, 1000, 150, 100, '2025-09-09', '1757376000', 'Pending', 'Jhenaidah', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '68bff87521bf5', NULL, NULL, NULL),
+(139, 28, 0, 1000, 150, 100, '2025-09-09', '1757376000', 'Pending', 'kk', NULL, NULL, 'Pending', 0, 'Cash', NULL, NULL, 'Pending', 'BDT', NULL, NULL, '2025-09-09 03:51:31', '2025-09-09 03:51:31'),
+(140, 28, 0, 100, 15, 100, '2025-09-09', '1757376000', 'Pending', 'u', NULL, NULL, 'Pending', 0, 'Cash', NULL, NULL, 'Pending', 'BDT', NULL, NULL, '2025-09-09 04:09:27', '2025-09-09 04:09:27'),
+(141, 28, 0, 280000, 42000, 100, '2025-09-09', '1757376000', 'Pending', 'mmm', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '68bffd29162ad', NULL, NULL, NULL),
+(142, 13, 0, 1000, 150, 100, '2025-11-01', '1761955200', 'Pending', 'd', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '69059116ec66d', NULL, NULL, NULL),
+(143, 13, 0, 1000, 150, 100, '2025-12-06', '1764979200', 'Pending', 'hh', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '6933f893561e1', NULL, NULL, NULL),
+(144, 13, 0, 2000, 300, 100, '2025-12-06', '1764979200', 'Processing', 'Uttora', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '6933f97c6841f', NULL, NULL, NULL),
+(145, 13, 0, 1199, 180, 100, '2025-06-12', '1749686400', 'Pending', 'Jhenaidah', NULL, NULL, 'Pending', 0, 'Cash', NULL, NULL, 'Pending', 'BDT', NULL, NULL, '2025-12-06 03:39:06', '2025-12-06 03:39:06'),
+(146, 13, 0, 7200, 1080, 100, '2025-06-12', '1749686400', 'Pending', 'Housebuilding', NULL, NULL, 'Pending', 0, 'Cash', NULL, NULL, 'Pending', 'BDT', NULL, NULL, '2025-12-06 04:44:26', '2025-12-06 04:44:26'),
+(147, 11, 0, 1000, 150, 100, '2026-03-08', '1772928000', 'Pending', 'jheanidah', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '69ad21d5521e8', NULL, NULL, NULL),
+(148, 11, 0, 400, 60, 100, '2026-03-08', '1772928000', 'Pending', 'Dhaka', NULL, NULL, 'Pending', 0, 'Online', NULL, NULL, 'Pending', 'BDT', '69ad22321da16', NULL, NULL, NULL),
+(149, 11, 0, 400, 60, 100, '2026-03-08', '1772928000', 'Complete', 'Dhaka', '2026-03-08', '1772928000', 'Complete', 400, 'Online', '2026-08-03', '1785715200', 'Complete', 'BDT', '69ad226c30e33', NULL, NULL, '2026-03-08 01:53:53');
 
 -- --------------------------------------------------------
 
@@ -453,7 +518,39 @@ CREATE TABLE `order_details` (
 --
 
 INSERT INTO `order_details` (`id`, `order_id`, `product_id`, `product_name`, `product_price`, `product_qty`, `created_at`, `updated_at`) VALUES
-(1, 119, 4, 'Apple', 350, 1, '2025-06-18 05:52:23', '2025-06-18 05:52:23');
+(1, 119, 4, 'Apple', 350, 1, '2025-06-18 05:52:23', '2025-06-18 05:52:23'),
+(2, 120, 18, 'Dexc Tool', 1000, 2, '2025-06-24 01:28:50', '2025-06-24 01:28:50'),
+(3, 121, 18, 'Dexc Tool', 1000, 1, '2025-06-24 02:09:01', '2025-06-24 02:09:01'),
+(4, 122, 18, 'Dexc Tool', 1000, 1, '2025-06-24 02:19:23', '2025-06-24 02:19:23'),
+(5, 123, 18, 'Dexc Tool', 1000, 1, '2025-06-24 02:29:08', '2025-06-24 02:29:08'),
+(6, 124, 18, 'Dexc Tool', 1000, 2, '2025-06-24 02:38:14', '2025-06-24 02:38:14'),
+(7, 125, 18, 'Dexc Tool', 1000, 1, '2025-06-24 02:40:51', '2025-06-24 02:40:51'),
+(8, 126, 18, 'Dexc Tool', 1000, 1, '2025-06-24 02:42:41', '2025-06-24 02:42:41'),
+(9, 126, 19, 'Awesome showcase', 1200, 1, '2025-06-24 02:42:41', '2025-06-24 02:42:41'),
+(10, 127, 18, 'Dexc Tool', 1000, 1, '2025-06-24 02:48:18', '2025-06-24 02:48:18'),
+(11, 127, 19, 'Awesome showcase', 1200, 1, '2025-06-24 02:48:18', '2025-06-24 02:48:18'),
+(12, 128, 18, 'Dexc Tool', 1000, 1, '2025-06-24 02:50:15', '2025-06-24 02:50:15'),
+(13, 129, 18, 'Dexc Tool', 1000, 1, '2025-06-24 02:51:24', '2025-06-24 02:51:24'),
+(14, 130, 18, 'Dexc Tool', 1000, 1, '2025-06-24 02:51:48', '2025-06-24 02:51:48'),
+(15, 131, 18, 'Dexc Tool', 1000, 1, '2025-06-24 02:52:49', '2025-06-24 02:52:49'),
+(16, 132, 11, 'Hoody', 1199, 1, '2025-06-24 12:00:42', '2025-06-24 12:00:42'),
+(17, 133, 19, 'Awesome showcase', 1200, 3, '2025-07-10 10:39:32', '2025-07-10 10:39:32'),
+(18, 134, 18, 'Dexc Tool', 1000, 1, '2025-07-17 00:16:30', '2025-07-17 00:16:30'),
+(19, 135, 20, 'Gaming Instruments latest', 2200, 1, '2025-07-17 00:17:50', '2025-07-17 00:17:50'),
+(20, 136, 18, 'Dexc Tool', 1000, 1, '2025-07-30 06:05:46', '2025-07-30 06:05:46'),
+(21, 137, 18, 'Dexc Tool', 1000, 1, '2025-09-09 03:50:44', '2025-09-09 03:50:44'),
+(22, 138, 18, 'Dexc Tool', 1000, 1, '2025-09-09 03:50:45', '2025-09-09 03:50:45'),
+(23, 139, 18, 'Dexc Tool', 1000, 1, '2025-09-09 03:51:31', '2025-09-09 03:51:31'),
+(24, 140, 6, 'Man Shirt', 100, 1, '2025-09-09 04:09:27', '2025-09-09 04:09:27'),
+(25, 141, 15, 'HD camera', 280000, 1, '2025-09-09 04:10:49', '2025-09-09 04:10:49'),
+(26, 142, 18, 'Dexc Tool', 1000, 1, '2025-10-31 22:48:22', '2025-10-31 22:48:22'),
+(27, 143, 18, 'Dexc Tool', 1000, 1, '2025-12-06 03:34:11', '2025-12-06 03:34:11'),
+(28, 144, 18, 'Dexc Tool', 1000, 2, '2025-12-06 03:38:04', '2025-12-06 03:38:04'),
+(29, 145, 11, 'Hoody', 1199, 1, '2025-12-06 03:39:06', '2025-12-06 03:39:06'),
+(30, 146, 19, 'Awesome showcase', 1200, 6, '2025-12-06 04:44:26', '2025-12-06 04:44:26'),
+(31, 147, 18, 'Dexc Tool', 1000, 1, '2026-03-08 01:14:29', '2026-03-08 01:14:29'),
+(32, 148, 16, 'Speaker', 400, 1, '2026-03-08 01:16:02', '2026-03-08 01:16:02'),
+(33, 149, 16, 'Speaker', 400, 1, '2026-03-08 01:17:00', '2026-03-08 01:17:00');
 
 -- --------------------------------------------------------
 
@@ -584,8 +681,10 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('iWCGuzUAeOn5lXBFBAxaH1CeRXhAygGYJhKc2pJD', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36', 'YToxMzp7czo2OiJfdG9rZW4iO3M6NDA6IktwbEE1dVpkdW1LRkFwWUh3bkNvdmo3dWFlQXVhVWxFUlB4QTVlcWciO3M6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjQzOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvY2hlY2tvdXQvYmlsbGluZy1pbmZvIjt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjIxOiJwYXNzd29yZF9oYXNoX3NhbmN0dW0iO3M6NjA6IiQyeSQxMiQ2TUJYMnFFYzYvUHU2VlhHeUpvZ2l1NHViWkoyQnZjOHJ6Q0xlLlFidTkzM3Y5UGJqRmZoZSI7czo0OiJjYXJ0IjthOjE6e3M6NzoiZGVmYXVsdCI7TzoyOToiSWxsdW1pbmF0ZVxTdXBwb3J0XENvbGxlY3Rpb24iOjI6e3M6ODoiACoAaXRlbXMiO2E6MTp7czozMjoiY2YxYzVlZDY4MTU2OGY3NzNiODcxZDVlM2VjODY0ZTEiO086MzI6Ikdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtIjo5OntzOjU6InJvd0lkIjtzOjMyOiJjZjFjNWVkNjgxNTY4Zjc3M2I4NzFkNWUzZWM4NjRlMSI7czoyOiJpZCI7aTo0O3M6MzoicXR5IjtpOjE7czo0OiJuYW1lIjtzOjU6IkFwcGxlIjtzOjU6InByaWNlIjtkOjM1MDtzOjc6Im9wdGlvbnMiO086Mzk6Ikdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtT3B0aW9ucyI6Mjp7czo4OiIAKgBpdGVtcyI7YToyOntzOjU6ImltYWdlIjtzOjI4OiJ1cGxvYWQvcHJvZHVjdC1pbWFnZS9hcDEuanBnIjtzOjQ6ImNvZGUiO3M6NToiYXBwbDEiO31zOjI4OiIAKgBlc2NhcGVXaGVuQ2FzdGluZ1RvU3RyaW5nIjtiOjA7fXM6NDk6IgBHbG91ZGVtYW5zXFNob3BwaW5nY2FydFxDYXJ0SXRlbQBhc3NvY2lhdGVkTW9kZWwiO047czo0MToiAEdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtAHRheFJhdGUiO2k6MjE7czo0MToiAEdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtAGlzU2F2ZWQiO2I6MDt9fXM6Mjg6IgAqAGVzY2FwZVdoZW5DYXN0aW5nVG9TdHJpbmciO2I6MDt9fXM6MjoiaWQiO2k6MTM7czo0OiJuYW1lIjtzOjU6Ik5haGlkIjtzOjU6ImltYWdlIjtzOjU3OiJ1cGxvYWQvY3VzdG9tZXItaW1hZ2VzL2lzdG9ja3Bob3RvLTEwMTM3OTUzMjItNjEyeDYxMi5qcGciO3M6MTE6Im9yZGVyX3RvdGFsIjtkOjM1MDtzOjE0OiJzaGlwcGluZ190b3RhbCI7aToxMDA7czo5OiJ0YXhfdG90YWwiO2Q6NTM7czoxMToiZmluYWxfdG90YWwiO2Q6NTAzO30=', 1750247528),
-('M0NVwVO7HNfGS2W2A4lPx44IBYj8lYAe5pCLIwyB', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36', 'YTo4OntzOjY6Il90b2tlbiI7czo0MDoidHVWdUJRR1dONVppQ2JTckc1YW9vM1lJSUdmTUlsTVJlZEIxbm5yUyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MjE6InBhc3N3b3JkX2hhc2hfc2FuY3R1bSI7czo2MDoiJDJ5JDEyJDZNQlgycUVjNi9QdTZWWEd5Sm9naXU0dWJaSjJCdmM4cnpDTGUuUWJ1OTMzdjlQYmpGZmhlIjtzOjQ6ImNhcnQiO2E6MTp7czo3OiJkZWZhdWx0IjtPOjI5OiJJbGx1bWluYXRlXFN1cHBvcnRcQ29sbGVjdGlvbiI6Mjp7czo4OiIAKgBpdGVtcyI7YToyOntzOjMyOiJjZjFjNWVkNjgxNTY4Zjc3M2I4NzFkNWUzZWM4NjRlMSI7TzozMjoiR2xvdWRlbWFuc1xTaG9wcGluZ2NhcnRcQ2FydEl0ZW0iOjk6e3M6NToicm93SWQiO3M6MzI6ImNmMWM1ZWQ2ODE1NjhmNzczYjg3MWQ1ZTNlYzg2NGUxIjtzOjI6ImlkIjtpOjQ7czozOiJxdHkiO3M6MToiOCI7czo0OiJuYW1lIjtzOjU6IkFwcGxlIjtzOjU6InByaWNlIjtkOjM1MDtzOjc6Im9wdGlvbnMiO086Mzk6Ikdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtT3B0aW9ucyI6Mjp7czo4OiIAKgBpdGVtcyI7YToyOntzOjU6ImltYWdlIjtzOjI4OiJ1cGxvYWQvcHJvZHVjdC1pbWFnZS9hcDEuanBnIjtzOjQ6ImNvZGUiO3M6NToiYXBwbDEiO31zOjI4OiIAKgBlc2NhcGVXaGVuQ2FzdGluZ1RvU3RyaW5nIjtiOjA7fXM6NDk6IgBHbG91ZGVtYW5zXFNob3BwaW5nY2FydFxDYXJ0SXRlbQBhc3NvY2lhdGVkTW9kZWwiO047czo0MToiAEdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtAHRheFJhdGUiO2k6MjE7czo0MToiAEdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtAGlzU2F2ZWQiO2I6MDt9czozMjoiYjY1MzhiNGMwMDgzYzllNzY0YjM1OWZmMDRjNDdkZDciO086MzI6Ikdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtIjo5OntzOjU6InJvd0lkIjtzOjMyOiJiNjUzOGI0YzAwODNjOWU3NjRiMzU5ZmYwNGM0N2RkNyI7czoyOiJpZCI7aToyMDtzOjM6InF0eSI7aToxO3M6NDoibmFtZSI7czoyNToiR2FtaW5nIEluc3RydW1lbnRzIGxhdGVzdCI7czo1OiJwcmljZSI7ZDoyMjAwO3M6Nzoib3B0aW9ucyI7TzozOToiR2xvdWRlbWFuc1xTaG9wcGluZ2NhcnRcQ2FydEl0ZW1PcHRpb25zIjoyOntzOjg6IgAqAGl0ZW1zIjthOjI6e3M6NToiaW1hZ2UiO3M6MzU6InVwbG9hZC9wcm9kdWN0LWltYWdlL3Byb2R1Y3QtMDEucG5nIjtzOjQ6ImNvZGUiO3M6MjoiZ20iO31zOjI4OiIAKgBlc2NhcGVXaGVuQ2FzdGluZ1RvU3RyaW5nIjtiOjA7fXM6NDk6IgBHbG91ZGVtYW5zXFNob3BwaW5nY2FydFxDYXJ0SXRlbQBhc3NvY2lhdGVkTW9kZWwiO047czo0MToiAEdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtAHRheFJhdGUiO2k6MjE7czo0MToiAEdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtAGlzU2F2ZWQiO2I6MDt9fXM6Mjg6IgAqAGVzY2FwZVdoZW5DYXN0aW5nVG9TdHJpbmciO2I6MDt9fXM6NjoiY291cG9uIjthOjI6e3M6NDoiY29kZSI7czo2OiJlaWQtMjUiO3M6ODoiZGlzY291bnQiO2k6MTAwO319', 1750249136);
+('9YjACrDlG2pUzFRMiu01glsmsoFPHXibUysPLQ6n', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoicjBCeDhvSHZzRk5zWjRPRFFZYXYxWGxYclpwMmJqUVFkVk1JWDhoViI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9kYXNoYm9hcmQiO31zOjQ6ImNhcnQiO2E6MTp7czo3OiJkZWZhdWx0IjtPOjI5OiJJbGx1bWluYXRlXFN1cHBvcnRcQ29sbGVjdGlvbiI6Mjp7czo4OiIAKgBpdGVtcyI7YToxOntzOjMyOiJiODljYWVkNzlhMzU0MjBmYzRhMGRjM2JjNmU3MTQ5ZiI7TzozMjoiR2xvdWRlbWFuc1xTaG9wcGluZ2NhcnRcQ2FydEl0ZW0iOjk6e3M6NToicm93SWQiO3M6MzI6ImI4OWNhZWQ3OWEzNTQyMGZjNGEwZGMzYmM2ZTcxNDlmIjtzOjI6ImlkIjtpOjY7czozOiJxdHkiO3M6MToiMSI7czo0OiJuYW1lIjtzOjk6Ik1hbiBTaGlydCI7czo1OiJwcmljZSI7ZDoxMDA7czo3OiJvcHRpb25zIjtPOjM5OiJHbG91ZGVtYW5zXFNob3BwaW5nY2FydFxDYXJ0SXRlbU9wdGlvbnMiOjI6e3M6ODoiACoAaXRlbXMiO2E6Mjp7czo1OiJpbWFnZSI7czozNDoidXBsb2FkL3Byb2R1Y3QtaW1hZ2UvcHJvZHVjdC00LnBuZyI7czo0OiJjb2RlIjtzOjQ6InV1dXUiO31zOjI4OiIAKgBlc2NhcGVXaGVuQ2FzdGluZ1RvU3RyaW5nIjtiOjA7fXM6NDk6IgBHbG91ZGVtYW5zXFNob3BwaW5nY2FydFxDYXJ0SXRlbQBhc3NvY2lhdGVkTW9kZWwiO047czo0MToiAEdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtAHRheFJhdGUiO2k6MjE7czo0MToiAEdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtAGlzU2F2ZWQiO2I6MDt9fXM6Mjg6IgAqAGVzY2FwZVdoZW5DYXN0aW5nVG9TdHJpbmciO2I6MDt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjI7czoyMToicGFzc3dvcmRfaGFzaF9zYW5jdHVtIjtzOjYwOiIkMnkkMTIkOHVjdnk0MG9na3ZUSVRnMEZCaXYzT2lWZFV1dUtVY1RTLkVJZzlPUm9VYnN4U0MudmxMZ1ciO30=', 1772956101),
+('vnyoRncsiZ9vbiC1E6e6FS9ZOuAPzMYTMTkbvGD2', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', 'YToxMTp7czo2OiJfdG9rZW4iO3M6NDA6Inhkb1ZmektidW5XNmhpNHJvZ2RoeHdMbFBOQTBqMWw5V2JuV2lNbDgiO3M6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjQzOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvY2hlY2tvdXQvYmlsbGluZy1pbmZvIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo0OiJjYXJ0IjthOjE6e3M6NzoiZGVmYXVsdCI7TzoyOToiSWxsdW1pbmF0ZVxTdXBwb3J0XENvbGxlY3Rpb24iOjI6e3M6ODoiACoAaXRlbXMiO2E6MTp7czozMjoiNzgzMzhjNjExYmJkZWQ3ODgyNjRiOWYyNzFmODM1MTUiO086MzI6Ikdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtIjo5OntzOjU6InJvd0lkIjtzOjMyOiI3ODMzOGM2MTFiYmRlZDc4ODI2NGI5ZjI3MWY4MzUxNSI7czoyOiJpZCI7aToxNjtzOjM6InF0eSI7aToxO3M6NDoibmFtZSI7czo3OiJTcGVha2VyIjtzOjU6InByaWNlIjtkOjQwMDtzOjc6Im9wdGlvbnMiO086Mzk6Ikdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtT3B0aW9ucyI6Mjp7czo4OiIAKgBpdGVtcyI7YToyOntzOjU6ImltYWdlIjtzOjM1OiJ1cGxvYWQvcHJvZHVjdC1pbWFnZS9wcm9kdWN0LTA0LnBuZyI7czo0OiJjb2RlIjtzOjI6InNwIjt9czoyODoiACoAZXNjYXBlV2hlbkNhc3RpbmdUb1N0cmluZyI7YjowO31zOjQ5OiIAR2xvdWRlbWFuc1xTaG9wcGluZ2NhcnRcQ2FydEl0ZW0AYXNzb2NpYXRlZE1vZGVsIjtOO3M6NDE6IgBHbG91ZGVtYW5zXFNob3BwaW5nY2FydFxDYXJ0SXRlbQB0YXhSYXRlIjtpOjIxO3M6NDE6IgBHbG91ZGVtYW5zXFNob3BwaW5nY2FydFxDYXJ0SXRlbQBpc1NhdmVkIjtiOjA7fX1zOjI4OiIAKgBlc2NhcGVXaGVuQ2FzdGluZ1RvU3RyaW5nIjtiOjA7fX1zOjI6ImlkIjtpOjExO3M6NDoibmFtZSI7czo1OiJSYWtpYiI7czo1OiJpbWFnZSI7czo3MToidXBsb2FkL2N1c3RvbWVyLWltYWdlcy9zbWlsaW5nLWJ1c2luZXNzLW1hbi1jYXJ0b29uLXZlY3Rvci0xMTE0MTI3MS5qcGciO3M6MTE6Im9yZGVyX3RvdGFsIjtkOjQwMDtzOjE0OiJzaGlwcGluZ190b3RhbCI7aToxMDA7czo5OiJ0YXhfdG90YWwiO2Q6NjA7czoxMToiZmluYWxfdG90YWwiO2Q6NTYwO30=', 1772954212),
+('WgXbixWjsvu8WXi6OdemTk1uDEbyOcqDuTcuD0GB', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', 'YToxMTp7czo2OiJfdG9rZW4iO3M6NDA6IlV1azV2bERuZFY0RGxQV2lHNVlKWXdPNjB4QkZYOFlvanVNZkhXSnQiO3M6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjUwOiJodHRwOi8vbG9jYWxob3N0L2Vjb20vcHVibGljL2NoZWNrb3V0L2JpbGxpbmctaW5mbyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NDoiY2FydCI7YToxOntzOjc6ImRlZmF1bHQiO086Mjk6IklsbHVtaW5hdGVcU3VwcG9ydFxDb2xsZWN0aW9uIjoyOntzOjg6IgAqAGl0ZW1zIjthOjE6e3M6MzI6Ijc4MzM4YzYxMWJiZGVkNzg4MjY0YjlmMjcxZjgzNTE1IjtPOjMyOiJHbG91ZGVtYW5zXFNob3BwaW5nY2FydFxDYXJ0SXRlbSI6OTp7czo1OiJyb3dJZCI7czozMjoiNzgzMzhjNjExYmJkZWQ3ODgyNjRiOWYyNzFmODM1MTUiO3M6MjoiaWQiO2k6MTY7czozOiJxdHkiO2k6MTtzOjQ6Im5hbWUiO3M6NzoiU3BlYWtlciI7czo1OiJwcmljZSI7ZDo0MDA7czo3OiJvcHRpb25zIjtPOjM5OiJHbG91ZGVtYW5zXFNob3BwaW5nY2FydFxDYXJ0SXRlbU9wdGlvbnMiOjI6e3M6ODoiACoAaXRlbXMiO2E6Mjp7czo1OiJpbWFnZSI7czozNToidXBsb2FkL3Byb2R1Y3QtaW1hZ2UvcHJvZHVjdC0wNC5wbmciO3M6NDoiY29kZSI7czoyOiJzcCI7fXM6Mjg6IgAqAGVzY2FwZVdoZW5DYXN0aW5nVG9TdHJpbmciO2I6MDt9czo0OToiAEdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtAGFzc29jaWF0ZWRNb2RlbCI7TjtzOjQxOiIAR2xvdWRlbWFuc1xTaG9wcGluZ2NhcnRcQ2FydEl0ZW0AdGF4UmF0ZSI7aToyMTtzOjQxOiIAR2xvdWRlbWFuc1xTaG9wcGluZ2NhcnRcQ2FydEl0ZW0AaXNTYXZlZCI7YjowO319czoyODoiACoAZXNjYXBlV2hlbkNhc3RpbmdUb1N0cmluZyI7YjowO319czoyOiJpZCI7aToxMTtzOjQ6Im5hbWUiO3M6NToiUmFraWIiO3M6NToiaW1hZ2UiO3M6NzE6InVwbG9hZC9jdXN0b21lci1pbWFnZXMvc21pbGluZy1idXNpbmVzcy1tYW4tY2FydG9vbi12ZWN0b3ItMTExNDEyNzEuanBnIjtzOjExOiJvcmRlcl90b3RhbCI7ZDo0MDA7czoxNDoic2hpcHBpbmdfdG90YWwiO2k6MTAwO3M6OToidGF4X3RvdGFsIjtkOjYwO3M6MTE6ImZpbmFsX3RvdGFsIjtkOjU2MDt9', 1772954155),
+('xDY9buRJ3XDkMGpCGyR7NzQ40XI1QxvHy5gjKCXg', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoidkFGenM2eHdGdERtTG16ZGgzRHF0aVpINnk3T21IeWVOUE1PMHphOCI7czozOiJ1cmwiO2E6MDp7fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjM2OiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvY2F0ZWdvcnkvaW5kZXgiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MjE6InBhc3N3b3JkX2hhc2hfc2FuY3R1bSI7czo2MDoiJDJ5JDEyJDZNQlgycUVjNi9QdTZWWEd5Sm9naXU0dWJaSjJCdmM4cnpDTGUuUWJ1OTMzdjlQYmpGZmhlIjt9', 1772956461);
 
 -- --------------------------------------------------------
 
@@ -679,7 +778,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `two_factor_confirmed_at`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`, `mobile`) VALUES
 (1, 'cserubelhosen@gmail.com', 'cserubelhosen@gmail.com', NULL, '$2y$12$6MBX2qEc6/Pu6VXGyJogiu4ubZJ2Bvc8rzCLe.Qbu933v9PbjFfhe', NULL, NULL, NULL, NULL, NULL, 'upload/user-images/cartoon-illustration-man-suit-tie-looking-directly-viewer_520881-11107.avif', '2025-06-18 05:10:32', '2025-06-18 05:12:46', NULL),
-(2, 'Admin', 'admin@gmail.com', NULL, '$2y$12$8ucvy40ogkvTITg0FBiv3OiVdUuuKUcTS.EIg9ORoUbsxSC.vlLgW', NULL, NULL, NULL, NULL, NULL, 'upload/user-images/business-man-illustration-ai-generated-image_362642-344.avif', '2025-06-18 05:12:24', '2025-06-18 05:13:03', NULL);
+(2, 'Admin', 'admin@gmail.com', NULL, '$2y$12$8ucvy40ogkvTITg0FBiv3OiVdUuuKUcTS.EIg9ORoUbsxSC.vlLgW', NULL, NULL, NULL, NULL, NULL, 'upload/user-images/business-man-illustration-ai-generated-image_362642-344.avif', '2025-06-18 05:12:24', '2025-06-18 05:13:03', NULL),
+(3, 'adminxx', 'adminxx@gmail.com', NULL, '$2y$12$XCaBp2j2hSmiw57PE.vp8uzUnTv15lPfYy7xJS5h3Lc7ugdA9Hd7C', NULL, NULL, NULL, NULL, NULL, NULL, '2025-10-07 02:35:24', '2025-10-07 02:35:24', NULL);
 
 -- --------------------------------------------------------
 
@@ -694,6 +794,34 @@ CREATE TABLE `wishlists` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `wishlists`
+--
+
+INSERT INTO `wishlists` (`id`, `customer_id`, `product_id`, `created_at`, `updated_at`) VALUES
+(7, 30, 19, '2025-06-19 01:00:22', '2025-06-19 01:00:22'),
+(9, 30, 16, '2025-06-19 01:03:48', '2025-06-19 01:03:48'),
+(11, 11, 1, '2025-06-19 02:24:56', '2025-06-19 02:24:56'),
+(13, 17, 19, '2025-06-19 02:58:56', '2025-06-19 02:58:56'),
+(14, 17, 1, '2025-06-19 03:01:13', '2025-06-19 03:01:13'),
+(15, 25, 20, '2025-06-19 03:19:03', '2025-06-19 03:19:03'),
+(16, 25, 19, '2025-06-19 03:21:58', '2025-06-19 03:21:58'),
+(17, 25, 17, '2025-06-19 03:37:58', '2025-06-19 03:37:58'),
+(19, 25, 1, '2025-06-19 04:54:32', '2025-06-19 04:54:32'),
+(24, 29, 20, '2025-06-19 05:46:23', '2025-06-19 05:46:23'),
+(25, 29, 19, '2025-06-19 05:46:33', '2025-06-19 05:46:33'),
+(26, 15, 20, '2025-06-19 06:10:36', '2025-06-19 06:10:36'),
+(27, 15, 19, '2025-06-19 06:15:15', '2025-06-19 06:15:15'),
+(28, 18, 19, '2025-06-19 06:16:46', '2025-06-19 06:16:46'),
+(29, 24, 18, '2025-06-19 06:17:17', '2025-06-19 06:17:17'),
+(34, 40, 18, '2025-06-19 07:40:45', '2025-06-19 07:40:45'),
+(35, 42, 19, '2025-06-19 07:46:54', '2025-06-19 07:46:54'),
+(36, 45, 16, '2025-06-19 07:53:07', '2025-06-19 07:53:07'),
+(38, 28, 14, '2025-09-09 04:08:27', '2025-09-09 04:08:27'),
+(41, 13, 14, '2025-10-31 22:50:48', '2025-10-31 22:50:48'),
+(42, 13, 1, '2025-10-31 22:51:01', '2025-10-31 22:51:01'),
+(43, 13, 17, '2025-10-31 22:51:08', '2025-10-31 22:51:08');
 
 --
 -- Indexes for dumped tables
@@ -858,7 +986,7 @@ ALTER TABLE `couriers`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -882,13 +1010,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=150;
 
 --
 -- AUTO_INCREMENT for table `order_details`
 --
 ALTER TABLE `order_details`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `other_images`
@@ -912,13 +1040,13 @@ ALTER TABLE `sub_categories`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `wishlists`
 --
 ALTER TABLE `wishlists`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

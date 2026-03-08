@@ -33,7 +33,7 @@ class SslCommerzPaymentController extends Controller
         $post_data = array();
         $post_data['total_amount'] = Session::get('order_total'); # You cant not pay less than 10
         $post_data['currency'] = "BDT";
-          $post_data['tran_id'] = uniqid(); // tran_id must be unique
+        $post_data['tran_id'] = uniqid(); // tran_id must be unique
 
         # CUSTOMER INFORMATION
         $post_data['cus_name'] = Session::get('name');
@@ -84,7 +84,7 @@ class SslCommerzPaymentController extends Controller
                 'currency'          => $post_data['currency']
             ]);
         //OrderDetail::newOrderDetail(Order::latest()->first()->id);
-        $orderId= Order::orderBy('id','desc')->first()->id;
+        $orderId = Order::orderBy('id', 'desc')->first()->id;
         OrderDetail::newOrderDetail($orderId); //88 line & 86 are same
 
         $sslc = new SslCommerzNotification();
@@ -95,7 +95,6 @@ class SslCommerzPaymentController extends Controller
             print_r($payment_options);
             $payment_options = array();
         }
-
     }
 
     public function payViaAjax(Request $request)
@@ -168,7 +167,6 @@ class SslCommerzPaymentController extends Controller
             print_r($payment_options);
             $payment_options = array();
         }
-
     }
 
     public function success(Request $request)
@@ -210,7 +208,6 @@ class SslCommerzPaymentController extends Controller
                 session()->forget('cart');
 
                 return redirect('/checkout/order-completed')->with('message', 'Your order info post successfully. Please wait, we will contact with you soon.');
-
             }
         } else if ($order_details->order_status == 'Processing' || $order_details->order_status == 'Complete') {
             /*
@@ -221,13 +218,10 @@ class SslCommerzPaymentController extends Controller
             session()->forget('cart');
 
             return redirect('/checkout/order-completed')->with('message', 'Your order info post successfully. Please wait, we will contact with you soon.');
-
         } else {
             #That means something wrong happened. You can redirect customer to your product page.
             echo "Invalid Transaction";
         }
-
-
     }
 
     public function fail(Request $request)
@@ -248,7 +242,6 @@ class SslCommerzPaymentController extends Controller
         } else {
             echo "Transaction is Invalid";
         }
-
     }
 
     public function cancel(Request $request)
@@ -269,8 +262,6 @@ class SslCommerzPaymentController extends Controller
         } else {
             echo "Transaction is Invalid";
         }
-
-
     }
 
     public function ipn(Request $request)
@@ -315,5 +306,4 @@ class SslCommerzPaymentController extends Controller
             echo "Invalid Data";
         }
     }
-
 }
